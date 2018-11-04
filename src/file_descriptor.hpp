@@ -6,7 +6,7 @@
  * shall pass already opened fd. In destructor class
  * call close() on fd.
  *
- * Recommended usage with shared_ptr().
+ * Recommended usage with std::shared_ptr().
  */
 class FileDescriptor
 {

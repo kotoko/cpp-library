@@ -3,7 +3,7 @@ Wrapper for file descriptor (RAII). In constructor shall pass already opened fd 
 
 ### Notes
 * linux/unix only
-* recommended usage with shared_ptr
+* recommended usage with std::shared_ptr
 
 ### Examples
 Simple example:
@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-Example with shared_ptr:
+Example with std::shared_ptr:
 ```
 #include <memory>
 #include "file_desciptor.hpp"
@@ -49,7 +49,7 @@ int main() {
 	// Do something.
 	//write(*text_file, "Hello world!", 12);
 
-	// File descriptor is guarder also against exceptions.
+	// File descriptor is guarded also against exceptions.
 	//throw std::bad_alloc();
 
 	// You can also manually close file descriptor (see documentation of shared_ptr).

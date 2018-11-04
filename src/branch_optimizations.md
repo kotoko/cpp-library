@@ -29,6 +29,7 @@ int main() {
 We expect that errors happens rarely, so we can write this:
 ```
 #include "branch_optimizations.hpp"
+
 int main() {
 	int status;
 	while(true) {
@@ -46,6 +47,7 @@ int main() {
 Or something like this:
 ```
 #include "branch_optimizations.hpp"
+
 int main() {
 	int status;
 	while(true) {

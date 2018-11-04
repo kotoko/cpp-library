@@ -1,13 +1,13 @@
 #ifndef MEMORY_CHUNK_HPP
 #define MEMORY_CHUNK_HPP
 
+
 #include <cstddef>
 #include <cstring>
 #include <gsl/gsl>
 
 
-/*
- * Wrapper for new & delete in RAII style. Class allows
+/* Wrapper for new & delete in RAII style. Class allows
  * you to allocate some memory block. It gives you pointer
  * to memory.
  */
@@ -128,5 +128,6 @@ MemoryChunk<T>::operator T*() const noexcept
 {
 	return memory_;
 }
+
 
 #endif //MEMORY_CHUNK_HPP
